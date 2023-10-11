@@ -1,0 +1,120 @@
+@keyframes fadein {
+    from {
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*========================By Tag===========================*/
+
+button {
+    background-color: #66748F;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.3rem;
+    padding: 0.3rem;
+}
+
+input {
+    font-weight: bold;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+
+    height: 100vh;
+    background-image: url(./../images/cloudy.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*========================By Id===========================*/
+
+#bcg {
+    position: absolute;
+    width: 24rem;
+    height: 15rem;
+    background-color: white;
+    z-index: 1;
+    opacity: 0.6;
+    border-radius: 9%;
+    display: none;
+}
+
+#info {
+    z-index: 2;
+    padding: 1rem;
+}
+
+#location {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#state {
+    font-size: larger;
+}
+
+/*========================By Class===========================*/
+
+.blue {
+    background-color: #4c8bcb;
+}
+.bold {
+    font-weight: bold;
+}
+
+.clear {
+    background-image: url(./../images/sunshine.webp);
+}
+
+.clouds {
+    background-image: url(./../images/cloudy.webp);
+}
+.mist, .foggy {
+    background-image: url(./../images/foggy.webp);
+}
+.rain {
+    background-image: url(./../images/rainy.webp);
+}
+.snow {
+    background-image: url(./../images/snowy.webp);
+}
+.showup {
+    display: block;
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}

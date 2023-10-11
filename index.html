@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+
+        <div id="location">
+            <input type="text" id="city" placeholder="Please enter City">
+            <input type="text" id="country" placeholder="Please enter Country">
+            <button id="btn" >Check</button>
+        </div>
+        
+    
+        <div id="info"></div>
+        <div id="bcg"></div>
+    
+        <template id="tpl">
+            <h1 id="state">##state##</h1>
+            <h4>##town## (##country##)</h4>
+            <p>Current temperature: <span class="bold">##curtemp##</span></p>
+            <p>Feels like: <span class="bold">##feeltemp##</span></p>
+            <p>Humidity: <span class="bold">##hum##</span></p>
+            <p>Wind: <span class="bold">##wind##</span></p>
+        </template>
+    </main>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
